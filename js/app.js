@@ -1,5 +1,11 @@
 /* Brand Center Interactivity & Growth Telemetry - Beija-Flor Rebranding */
 
+// Global Error Handler for remote debugging
+window.onerror = function(message, source, lineno, colno, error) {
+  alert("Erro de Script:\n" + message + "\nLinha: " + lineno + "\nArquivo: " + source);
+  return false;
+};
+
 // Inline fallback JSON data in case CORS blocks fetch (e.g., when opening index.html directly from local folder)
 const fallbackBrandData = {
   "visual_identity": {
