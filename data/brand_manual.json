@@ -1,0 +1,125 @@
+{
+  "brand_strategy": {
+    "name": "Beija-Flor Controle de Pragas & Saneamento Ecológico",
+    "foundation_year": 2009,
+    "location": "Ilhabela - SP",
+    "concept": "O Equilíbrio da Natureza",
+    "mission": "Proteger lares, hotéis e embarcações em Ilhabela por meio de um controle inteligente e ecológico, preservando a saúde humana, a integridade do patrimônio e a biodiversidade local da Mata Atlântica.",
+    "vision": "Ser a principal referência em saneamento ambiental e controle biológico e ecológico de pragas no Litoral Norte, conhecida pela excelência técnica, estética sofisticada e práticas sustentáveis.",
+    "values": [
+      "Responsabilidade Ecológica (preservação do bioma insular)",
+      "Excelência Técnica e Rigor Científico",
+      "Segurança e Cuidado com Pessoas e Pets",
+      "Transparência e Confiança de Longo Prazo",
+      "Respeito ao Equilíbrio Natural da Fauna Local"
+    ],
+    "positioning": "Deixamos de ser apenas uma 'dedetizadora comum' para nos posicionar como a Guardiã do Bem-estar e do Equilíbrio Ambiental de Ilhabela. O nome Beija-Flor é resgatado sob seu real significado: a ave é um predador natural que atua no controle biológico de insetos urbanos. Nossa marca simboliza proteção, leveza e harmonia ecológica."
+  },
+  "brand_personality": {
+    "attributes": [
+      {
+        "title": "Natural & Consciente",
+        "description": "Nossa abordagem prioriza a saúde do ecossistema. Não somos inimigos da natureza, somos os restauradores do equilíbrio no ambiente urbano."
+      },
+      {
+        "title": "Técnica & Precisa",
+        "description": "Utilizamos métodos de ponta, engenharia ambiental avançada e controle integrado com base científica, garantindo eficiência sem excessos."
+      },
+      {
+        "title": "Sofisticada & Premium",
+        "description": "Atendemos o público exigente de Ilhabela, incluindo pousadas de charme, resorts, mansões e iates. Nosso atendimento, visual e linguagem transmitem essa distinção."
+      }
+    ],
+    "tone_of_voice": {
+      "do": [
+        "Usar palavras como 'Equilíbrio', 'Harmonia', 'Proteção', 'Bem-estar', 'Prevenção' e 'Saneamento'.",
+        "Explicar a ciência por trás do controle integrado de pragas de forma clara.",
+        "Transmitir sofisticação e profissionalismo dignos de uma marca premium.",
+        "Destacar a preservação ambiental como pilar essencial das soluções."
+      ],
+      "dont": [
+        "Usar termos assustadores ou agressivos como 'extermínio', 'matança', 'veneno mortal' ou 'guerra contra os insetos'.",
+        "Usar designs amadores com baratas riscadas, caveiras ou faixas pretas e amarelas de perigo.",
+        "Transmitir uma imagem clínica excessivamente fria e industrial, desconectada da natureza."
+      ]
+    }
+  },
+  "visual_identity": {
+    "typography": {
+      "headings": {
+        "family": "Outfit",
+        "source": "Google Fonts",
+        "weight": "800 (Bold) / 600 (Semi-Bold)",
+        "description": "Uma fonte geométrica de alta legibilidade, com cantos levemente arredondados que transmitem modernidade, sofisticação e suavidade natural."
+      },
+      "body": {
+        "family": "Plus Jakarta Sans",
+        "source": "Google Fonts",
+        "weight": "400 (Regular) / 500 (Medium) / 700 (Bold)",
+        "description": "Uma fonte limpa, com proporções contemporâneas, ideal para leitura fluida de relatórios técnicos, propostas e conteúdo de site."
+      }
+    },
+    "color_palette": [
+      {
+        "name": "Verde Floresta",
+        "role": "Cor Primária",
+        "hex": "#0A3C36",
+        "rgb": "rgb(10, 60, 54)",
+        "hsl": "hsl(173, 71%, 14%)",
+        "description": "Inspirada no coração da Mata Atlântica de Ilhabela. Transmite estabilidade, compromisso ecológico, profundidade e prestígio."
+      },
+      {
+        "name": "Dourado Areia",
+        "role": "Cor Secundária",
+        "hex": "#D4A373",
+        "rgb": "rgb(212, 163, 115)",
+        "hsl": "hsl(30, 53%, 64%)",
+        "description": "Representa o brilho do sol, a areia dourada e a energia vibrante do beija-flor. Traz calor e sofisticação à identidade visual."
+      },
+      {
+        "name": "Verde Selva Médio",
+        "role": "Cor de Apoio / Destaques",
+        "hex": "#1E8276",
+        "rgb": "rgb(30, 130, 118)",
+        "hsl": "hsl(173, 63%, 31%)",
+        "description": "Usado para botões, links ativos e elementos que precisam de destaque visual sem perder a harmonia com o tom escuro."
+      },
+      {
+        "name": "Creme Orgânico",
+        "role": "Fundo Claro / Neutro",
+        "hex": "#FDFBF7",
+        "rgb": "rgb(253, 251, 247)",
+        "hsl": "hsl(40, 43%, 98%)",
+        "description": "Substitui o branco clínico frio. Proporciona um fundo limpo, confortável para os olhos, que remete à suavidade e pureza do ambiente sanitizado."
+      },
+      {
+        "name": "Terracota Suave",
+        "role": "Destaque de Alerta",
+        "hex": "#E29578",
+        "rgb": "rgb(226, 149, 120)",
+        "hsl": "hsl(16, 66%, 68%)",
+        "description": "Cor de destaque secundário para alertas, botões de ação secundária e notas importantes, complementando os tons de verde."
+      }
+    ]
+  },
+  "seo_and_gmb": {
+    "target_keywords": [
+      "Dedetizadora em Ilhabela",
+      "Controle de pragas Ilhabela",
+      "Desinsetização em Ilhabela",
+      "Desratização pousada Ilhabela",
+      "Saneamento ecológico Ilhabela",
+      "Dedetização náutica Ilhabela",
+      "Controle de cupins Ilhabela"
+    ],
+    "gmb_optimization": {
+      "business_name": "Beija-Flor Controle de Pragas & Saneamento Ecológico - Ilhabela",
+      "description": "Especialistas em dedetização, descupinização, desratização e higienização de caixas d'água em Ilhabela desde 2009. Atendimento exclusivo para residências, pousadas, hotéis, comércios e embarcações. Utilizamos tecnologia de ponta e controle integrado de pragas, respeitando o ecossistema local e a saúde de sua família.",
+      "categories": [
+        "Serviço de controle de pragas",
+        "Serviço de saneamento",
+        "Empresa de limpeza de reservatórios"
+      ]
+    }
+  }
+}

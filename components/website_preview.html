@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beija-Flor Saneamento Ecológico | Ilhabela</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Scope resetting */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --primary: #0A3C36;
+      --secondary: #D4A373;
+      --accent: #1E8276;
+      --cream: #FDFBF7;
+      --terracotta: #E29578;
+      
+      --text: #1C2B29;
+      --text-muted: #536B67;
+      --card-bg: #FFFFFF;
+      --card-border: rgba(30, 130, 118, 0.08);
+      
+      --font-title: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    body {
+      background-color: var(--cream);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    /* Navigation Bar */
+    .navbar {
+      height: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5%;
+      background-color: rgba(253, 251, 247, 0.9);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--card-border);
+    }
+    
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    
+    .nav-logo-text {
+      font-family: var(--font-title);
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: 1px;
+      color: var(--primary);
+      line-height: 1;
+    }
+    
+    .nav-logo-text span {
+      color: var(--secondary);
+    }
+    
+    .nav-logo-text p {
+      font-family: var(--font-body);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      color: var(--accent);
+      margin-top: 3px;
+    }
+    
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    
+    .btn-contact {
+      background-color: var(--primary);
+      color: var(--cream) !important;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(10, 60, 54, 0.15);
+    }
+    
+    .btn-contact:hover {
+      background-color: var(--accent);
+      box-shadow: 0 4px 15px rgba(30, 130, 118, 0.3);
+      transform: translateY(-2px);
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: 100px 5% 120px 5%;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      align-items: center;
+      gap: 60px;
+      background: radial-gradient(circle at 80% 20%, rgba(212, 163, 115, 0.08) 0%, transparent 60%);
+    }
+    
+    .hero-content {
+      max-width: 650px;
+    }
+    
+    .badge-eco {
+      background-color: rgba(30, 130, 118, 0.08);
+      color: var(--accent);
+      border: 1px solid rgba(30, 130, 118, 0.2);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+    
+    .hero h1 {
+      font-family: var(--font-title);
+      font-size: 52px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    
+    .hero h1 span {
+      color: var(--secondary);
+    }
+    
+    .hero p {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 35px;
+    }
+    
+    .hero-actions {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .btn-action-primary {
+      background-color: var(--primary);
+      color: var(--cream);
+      padding: 16px 32px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(10, 60, 54, 0.2);
+      transition: all 0.3s;
+    }
+    
+    .btn-action-primary:hover {
+      background-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(30, 130, 118, 0.35);
+    }
+    
+    .btn-action-secondary {
+      background-color: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    
+    .btn-action-secondary:hover {
+      background-color: var(--primary);
+      color: var(--cream);
+      transform: translateY(-3px);
+    }
+    
+    /* Hero Image Graphic Mockup */
+    .hero-image-container {
+      position: relative;
+    }
+    
+    .hero-main-card {
+      background: linear-gradient(135deg, var(--primary) 0%, #062824 100%);
+      border-radius: 24px;
+      padding: 40px;
+      color: var(--cream);
+      box-shadow: 0 20px 40px rgba(10, 60, 54, 0.15);
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .hero-card-logo {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .hero-card-stamp {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    
+    .hero-card-middle h3 {
+      font-family: var(--font-title);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    
+    .hero-card-middle p {
+      font-size: 14px;
+      color: rgba(253, 251, 247, 0.7);
+      margin-bottom: 0;
+    }
+    
+    .hero-card-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+    
+    /* Floating Decorative Hummingbird */
+    .floating-eco-badge {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background-color: var(--cream);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      z-index: 10;
+    }
+    
+    .badge-icon {
+      font-size: 24px;
+    }
+    
+    .badge-info h5 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    .badge-info p {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    
+    /* Services Section */
+    .services-section {
+      padding: 100px 5%;
+      background-color: #FFFFFF;
+      border-top: 1px solid var(--card-border);
+      border-bottom: 1px solid var(--card-border);
+    }
+    
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px auto;
+    }
+    
+    .section-header h2 {
+      font-family: var(--font-title);
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    
+    .service-card {
+      background-color: var(--cream);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 35px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--secondary);
+      box-shadow: 0 15px 30px rgba(10, 60, 54, 0.06);
+      background-color: #FFFFFF;
+    }
+    
+    .service-icon {
+      font-size: 36px;
+      margin-bottom: 25px;
+      width: 70px;
+      height: 70px;
+      background-color: rgba(30, 130, 118, 0.08);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+    }
+    
+    .service-card h3 {
+      font-family: var(--font-title);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    
+    .service-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    
+    .service-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .service-link::after {
+      content: '→';
+      transition: transform 0.2s;
+    }
+    
+    .service-card:hover .service-link::after {
+      transform: translateX(4px);
+    }
+    
+    /* Concept Story Section (Por que Beija-Flor?) */
+    .story-section {
+      padding: 100px 5%;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      align-items: center;
+      gap: 80px;
+    }
+    
+    .story-graphics {
+      background: radial-gradient(circle at 30% 70%, rgba(30, 130, 118, 0.06) 0%, transparent 60%);
+      padding: 40px;
+      border-radius: 24px;
+      border: 1px dashed var(--secondary);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .story-graphic-content {
+      text-align: center;
+      padding: 40px;
+      background-color: #FFFFFF;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      max-width: 400px;
+    }
+    
+    .story-graphic-content h4 {
+      font-family: var(--font-title);
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    
+    .story-graphic-content p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    
+    .story-content h2 {
+      font-family: var(--font-title);
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .story-content h2 span {
+      color: var(--secondary);
+    }
+    
+    .story-content p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 25px;
+    }
+    
+    /* Interactive Estimator Form */
+    .estimator-section {
+      padding: 100px 5%;
+      background-color: var(--primary);
+      color: var(--cream);
+      background-image: radial-gradient(circle at 10% 10%, rgba(30,130,118,0.2) 0%, transparent 50%);
+    }
+    
+    .estimator-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 50px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+    
+    .estimator-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .estimator-header h2 {
+      font-family: var(--font-title);
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: var(--cream);
+    }
+    
+    .estimator-header p {
+      color: rgba(253, 251, 247, 0.7);
+      font-size: 15px;
+    }
+    
+    .estimator-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      color: var(--secondary);
+      text-transform: uppercase;
+    }
+    
+    .form-select, .form-range {
+      width: 100%;
+      background-color: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 12px 16px;
+      color: var(--cream);
+      outline: none;
+      font-family: var(--font-body);
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+    
+    .form-select:focus {
+      border-color: var(--secondary);
+      background-color: rgba(255,255,255,0.1);
+    }
+    
+    .range-value-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: rgba(253, 251, 247, 0.6);
+      margin-top: 6px;
+    }
+    
+    /* Result card */
+    .result-card {
+      background-color: rgba(253, 251, 247, 0.05);
+      border: 1px dashed rgba(212, 163, 115, 0.3);
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+    }
+    
+    .result-price-label {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(253, 251, 247, 0.6);
+    }
+    
+    .result-price-value {
+      font-family: var(--font-title);
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin: 15px 0;
+    }
+    
+    .result-disclaimer {
+      font-size: 11px;
+      color: rgba(253, 251, 247, 0.4);
+      line-height: 1.4;
+      margin-bottom: 25px;
+    }
+    
+    .btn-submit-budget {
+      background-color: var(--secondary);
+      color: var(--primary);
+      border: none;
+      padding: 16px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(212, 163, 115, 0.2);
+    }
+    
+    .btn-submit-budget:hover {
+      background-color: #E5B485;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(212, 163, 115, 0.35);
+    }
+    
+    /* Footer */
+    .footer {
+      background-color: #061816;
+      color: rgba(253, 251, 247, 0.6);
+      padding: 80px 5% 40px 5%;
+      border-top: 1px solid rgba(30, 130, 118, 0.15);
+      font-size: 13px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+    
+    .footer-brand h4 {
+      font-family: var(--font-title);
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--cream);
+      margin-bottom: 15px;
+    }
+    
+    .footer-brand p {
+      max-width: 320px;
+      line-height: 1.6;
+    }
+    
+    .footer-col h5 {
+      color: var(--cream);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .footer-col ul {
+      list-style: none;
+    }
+    
+    .footer-col li {
+      margin-bottom: 12px;
+    }
+    
+    .footer-col a {
+      color: rgba(253, 251, 247, 0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .footer-col a:hover {
+      color: var(--secondary);
+    }
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(253, 251, 247, 0.08);
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    /* WhatsApp Floating Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+    
+    /* Responsive overrides inside iframe */
+    @media (max-width: 850px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+        padding-bottom: 60px;
+      }
+      .story-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .estimator-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .navbar {
+        padding: 0 15px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 100 100" width="38" height="38">
+        <circle cx="50" cy="50" r="45" fill="none" stroke="#D4A373" stroke-width="2.5" stroke-dasharray="6 4" />
+        <path d="M 40,50 C 40,65 52,70 60,70 C 60,70 53,60 53,50 C 53,40 62,30 62,30 C 52,30 40,36 40,50 Z" fill="#0A3C36" />
+        <circle cx="62" cy="30" r="7" fill="#0A3C36" />
+        <path d="M 68,27 L 90,20 C 90,20 78,25 68,30 Z" fill="#D4A373" />
+        <path d="M 45,45 C 40,35 32,20 50,15 C 57,12 60,23 58,33 C 56,43 49,47 45,45 Z" fill="#0A3C36" opacity="0.9" />
+      </svg>
+      <div class="nav-logo-text">
+        BEIJA<span>-</span>FLOR
+        <p>SANEAMENTO ECOLÓGICO</p>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Conceito</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#embarcacoes">Náutico</a></li>
+      <li><a href="#simulador">Orçamento</a></li>
+      <li><a href="#contato" class="btn-contact">Falar com Especialista</a></li>
+    </ul>
+  </header>
+  
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge-eco">✦ Proteção e Saúde Ambiental</span>
+      <h1>O controle de pragas no <span>ritmo da natureza</span>.</h1>
+      <p>Unimos engenharia sanitária avançada com responsabilidade ecológica para proteger lares, pousadas e iates em Ilhabela. Soluções premium e seguras para sua família, seus pets e o ecossistema local.</p>
+      <div class="hero-actions">
+        <a href="#simulador" class="btn-action-primary">Simular Orçamento</a>
+        <a href="#sobre" class="btn-action-secondary">Nosso Método</a>
+      </div>
+    </div>
+    
+    <div class="hero-image-container">
+      <div class="hero-main-card">
+        <div class="hero-card-header">
+          <svg viewBox="0 0 100 100" class="hero-card-logo" fill="none">
+            <circle cx="50" cy="50" r="45" stroke="#D4A373" stroke-width="2" stroke-dasharray="5 3"/>
+            <path d="M 40,50 C 40,65 52,70 60,70 C 60,70 53,60 53,50 C 53,40 62,30 62,30 C 52,30 40,36 40,50 Z" fill="#D4A373"/>
+            <circle cx="62" cy="30" r="7" fill="#D4A373"/>
+            <path d="M 68,27 L 90,20 Z" stroke="#FDFBF7" stroke-width="2"/>
+          </svg>
+          <span class="hero-card-stamp">Selo Eco</span>
+        </div>
+        <div class="hero-card-middle">
+          <p style="color: var(--secondary); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px;">Saneamento Premium</p>
+          <h3>Equilíbrio Biológico & Proteção</h3>
+          <p>Preservamos o ecossistema de Ilhabela enquanto protegemos o seu patrimônio.</p>
+        </div>
+        <div class="hero-card-footer">
+          <span>Est. 2009</span>
+          <span>Ilhabela &bull; Litoral Norte</span>
+        </div>
+      </div>
+      
+      <div class="floating-eco-badge">
+        <span class="badge-icon">🌿</span>
+        <div class="badge-info">
+          <h5>100% Biodegradável</h5>
+          <p>Livre de odores e agressividade</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CORE SERVICES SECTION -->
+  <section class="services-section" id="servicos">
+    <div class="section-header">
+      <h2>Saneamento de Alta Precisão</h2>
+      <p>Serviços planejados sob rigor técnico para garantir ambientes saudáveis sem perturbar o equilíbrio natural da ilha.</p>
+    </div>
+    
+    <div class="services-grid">
+      <!-- Desinsetização -->
+      <div class="service-card">
+        <div class="service-icon">🍃</div>
+        <h3>Desinsetização Inteligente</h3>
+        <p>Controle de insetos rasteiros e voadores por meio de gel de atração e micro-pulverizações localizadas, seguras para pets e plantas.</p>
+        <a href="#contato" class="service-link">Saber mais</a>
+      </div>
+      
+      <!-- Descupinização -->
+      <div class="service-card">
+        <div class="service-icon">🪵</div>
+        <h3>Descupinização Curativa</h3>
+        <p>Detecção de colônias por termografia e injeção localizada de barreiras ecológicas, preservando a integridade de estruturas e móveis de madeira.</p>
+        <a href="#contato" class="service-link">Saber mais</a>
+      </div>
+      
+      <!-- Controle Náutico -->
+      <div class="service-card" id="embarcacoes">
+        <div class="service-icon">⚓</div>
+        <h3>Saneamento Náutico</h3>
+        <p>Tratamento ultra-especializado para lanchas, veleiros e iates. Higienização minuciosa contra umidade e pragas típicas da maresia.</p>
+        <a href="#contato" class="service-link">Saber mais</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- STORY/CONCEPT SECTION -->
+  <section class="story-section" id="sobre">
+    <div class="story-graphics">
+      <div class="story-graphic-content">
+        <div class="service-icon" style="margin: 0 auto 20px auto;">🎯</div>
+        <h4>Aliado Biológico</h4>
+        <p>Na natureza, o beija-flor é um predador natural que consome centenas de insetos (incluindo mosquitos) diariamente, regulando o bioma sem deixar rastros nocivos.</p>
+      </div>
+    </div>
+    
+    <div class="story-content">
+      <h2>Por que <span>Beija-Flor</span>?</h2>
+      <p>O nome escolhido pelos fundadores em 2009 carrega a verdadeira essência ecológica de Ilhabela. O beija-flor é sinônimo de leveza e beleza, mas também é um poderoso e ágil predador de insetos na cadeia biológica local.</p>
+      <p>Nosso trabalho é inspirado nessa dinâmica natural. Não combatemos a natureza; restauramos as barreiras sanitárias que separam as pragas urbanas do conforto e da segurança das residências e dos hóspedes de Ilhabela, usando a ciência a favor do equilíbrio.</p>
+      <a href="#simulador" class="btn-action-primary" style="display: inline-block;">Fazer Orçamento Online</a>
+    </div>
+  </section>
+  
+  <!-- INTERACTIVE BUDGET ESTIMATOR -->
+  <section class="estimator-section" id="simulador">
+    <div class="estimator-container">
+      <div class="estimator-header">
+        <h2>Simulador de Proteção Online</h2>
+        <p>Escolha os dados do seu imóvel e receba uma estimativa instantânea de investimento.</p>
+      </div>
+      
+      <div class="estimator-grid">
+        <!-- Form inputs -->
+        <div class="estimator-form">
+          <div class="form-group">
+            <label for="property-type">Tipo de Imóvel</label>
+            <select id="property-type" class="form-select">
+              <option value="casa">Residência / Casa de Praia</option>
+              <option value="hotel">Pousada / Hotel de Charme</option>
+              <option value="barco">Embarcação (Náutico)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="service-type">Tipo de Saneamento</label>
+            <select id="service-type" class="form-select">
+              <option value="completo">Proteção Integrada Completa (Eco-Geral)</option>
+              <option value="inseto">Apenas Desinsetização Local</option>
+              <option value="cupim">Tratamento de Cupins em Madeiras</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="property-size">Área Estimada (m² ou pés para barcos)</label>
+            <input type="range" id="property-size" class="form-range" min="50" max="1000" step="50" value="150" style="accent-color: var(--secondary);">
+            <div class="range-value-label">
+              <span>Mín: 50m² / pés</span>
+              <strong id="range-value-display">150 m²</strong>
+              <span>Máx: 1000m² / pés</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Results display -->
+        <div class="result-card">
+          <div>
+            <span class="result-price-label">Estimativa Média de Investimento</span>
+            <div class="result-price-value" id="result-price">R$ 540,00</div>
+            <p style="font-size: 13px; opacity: 0.8;">Inclui visita técnica diagnóstica e laudo de garantia assinado por engenheiro químico responsável.</p>
+          </div>
+          <div>
+            <p class="result-disclaimer">*Este simulador calcula uma estimativa com base na tabela geral de Ilhabela. O valor exato será determinado após vistoria técnica local gratuita.</p>
+            <button class="btn-submit-budget" id="btn-request-contact">Confirmar & Agendar Vistoria</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>BEIJA-FLOR</h4>
+        <p>Referência em controle de pragas, higienização e saneamento ambiental ecológico em Ilhabela e Litoral Norte. Proteção segura desde 2009.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="#">Desinsetização</a></li>
+          <li><a href="#">Descupinização</a></li>
+          <li><a href="#">Desratização</a></li>
+          <li><a href="#">Controle Náutico</a></li>
+          <li><a href="#">Higienização Reservatórios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#">Nosso Laudo Químico</a></li>
+          <li><a href="#">Políticas de Sustentabilidade</a></li>
+          <li><a href="#">Atendimento Corporativo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contatos</h5>
+        <ul>
+          <li>📍 Barra Velha, Ilhabela - SP</li>
+          <li>📞 (12) 3896-6425</li>
+          <li>✉️ atendimento@beija-flor.com</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Beija-Flor Controle de Pragas Ltda. Todos os direitos reservados. Responsável Técnico CRQ nº 042642-SP.</p>
+      <p>Design por Agência Antigravity</p>
+    </div>
+  </footer>
+  
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-btn" onclick="alert('Conectando ao WhatsApp do atendimento da Beija-Flor Ilhabela...')">
+    <svg viewBox="0 0 24 24" width="34" height="34" fill="#FFF">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.528 2.03 14.05 1.002 11.993 1.002 6.561 1.002 2.137 5.372 2.133 10.8c-.001 1.73.476 3.41 1.381 4.885L2.38 20.283l4.267-1.129zM17.9 14.65c-.326-.162-1.927-.945-2.224-1.053-.297-.108-.513-.162-.73.162-.216.324-.838 1.053-1.027 1.269-.19.215-.38.243-.706.081-.326-.162-1.374-.503-2.617-1.604-.967-.859-1.62-1.92-1.81-2.244-.19-.324-.02-.499.143-.66.147-.147.327-.378.49-.567.163-.189.216-.324.325-.54.109-.216.054-.405-.028-.567-.08-.162-.73-1.75-.999-2.404-.263-.628-.53-.54-.73-.55-.189-.01-.406-.01-.622-.01-.216 0-.568.08-.866.405-.298.324-1.137 1.107-1.137 2.7 0 1.593 1.163 3.13 1.325 3.346.163.216 2.29 3.479 5.548 4.869.775.33 1.38.528 1.85.676.78.246 1.49.211 2.05.127.625-.094 1.927-.783 2.2-1.5.27-.715.27-1.327.19-1.458-.08-.132-.297-.213-.623-.375z"/>
+    </svg>
+  </div>
+
+  <script>
+    // Estimate Budget live calculation logic
+    const propertyType = document.getElementById("property-type");
+    const serviceType = document.getElementById("service-type");
+    const propertySize = document.getElementById("property-size");
+    const sizeDisplay = document.getElementById("range-value-display");
+    const priceDisplay = document.getElementById("result-price");
+    const requestContact = document.getElementById("btn-request-contact");
+    
+    function calculateSimulatedPrice() {
+      const type = propertyType.value;
+      const service = serviceType.value;
+      const size = parseInt(propertySize.value);
+      
+      // Base factors
+      let baseRate = 2.0; // Price per m2
+      if (type === "hotel") {
+        baseRate = 2.5; // Commercial hotel scaling
+      } else if (type === "barco") {
+        baseRate = 4.0; // Yacht/boat special marine equipment premium
+      }
+      
+      let serviceFactor = 1.0;
+      if (service === "completo") {
+        serviceFactor = 1.8; // Full organic plan
+      } else if (service === "cupim") {
+        serviceFactor = 1.5; // Thermal termography & injection
+      }
+      
+      // Calculate
+      let finalPrice = size * baseRate * serviceFactor;
+      
+      // Apply minimum thresholds
+      let minPrice = 350;
+      if (type === "barco") minPrice = 600;
+      if (type === "hotel") minPrice = 800;
+      
+      if (finalPrice < minPrice) finalPrice = minPrice;
+      
+      // Display formatting
+      priceDisplay.textContent = `R$ ${finalPrice.toFixed(2).replace('.', ',')}`;
+      
+      // Size text updates based on category
+      const unit = type === "barco" ? "Pés" : "m²";
+      sizeDisplay.textContent = `${size} ${unit}`;
+
+      // Send telemetry message to parent window (if in iframe)
+      window.parent.postMessage({
+        type: "budget_simulated",
+        details: {
+          type: type,
+          service: service,
+          size: `${size} ${unit}`,
+          price: `R$ ${finalPrice.toFixed(2).replace('.', ',')}`
+        }
+      }, "*");
+    }
+    
+    // Bind listeners
+    propertyType.addEventListener("change", calculateSimulatedPrice);
+    serviceType.addEventListener("change", calculateSimulatedPrice);
+    propertySize.addEventListener("input", calculateSimulatedPrice);
+    
+    requestContact.addEventListener("click", () => {
+      const type = propertyType.value;
+      const service = serviceType.value;
+      const size = propertySize.value;
+      const price = priceDisplay.textContent;
+      const unit = type === "barco" ? "Pés" : "m²";
+      
+      const whatsappText = `Olá Thiago! Usei o simulador no Brand Center da Beija-Flor. Configurações:\n- Imóvel: ${type.toUpperCase()}\n- Área: ${size} ${unit}\n- Saneamento: ${service.toUpperCase()}\n- Valor Estimado: ${price}\n\nQuero agendar a vistoria diagnóstica e nossa reunião.`;
+      
+      // Redirect parent page to WhatsApp
+      window.parent.location.href = `https://wa.me/5511992364885?text=${encodeURIComponent(whatsappText)}`;
+    });
+    
+    // Initial run
+    calculateSimulatedPrice();
+  </script>
+</body>
+</html>

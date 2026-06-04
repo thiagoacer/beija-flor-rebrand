@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A5C52" />
+      <stop offset="100%" stop-color="#1E8276" />
+    </linearGradient>
+    <linearGradient id="gradient-secondary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E29578" />
+      <stop offset="100%" stop-color="#D4A373" />
+    </linearGradient>
+    <linearGradient id="gradient-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E9D8F" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#D4A373" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- BACKGROUND GRID (SUBTLE BRAND PATTERN) -->
+  <g opacity="0.03" stroke="#0A5C52" stroke-width="1">
+    <line x1="0" y1="40" x2="600" y2="40" />
+    <line x1="0" y1="80" x2="600" y2="80" />
+    <line x1="0" y1="120" x2="600" y2="120" />
+    <line x1="80" y1="0" x2="80" y2="160" />
+    <line x1="160" y1="0" x2="160" y2="160" />
+    <line x1="240" y1="0" x2="240" y2="160" />
+  </g>
+
+  <!-- LOGO MARK: GEOMETRIC HUMMINGBIRD (BEIJA-FLOR) -->
+  <g transform="translate(15, 10)">
+    <!-- Outer Golden Orbit Ring (representing protection / environment) -->
+    <circle cx="70" cy="70" r="58" fill="none" stroke="url(#gradient-secondary)" stroke-width="2.5" stroke-dasharray="10 5 2 5" opacity="0.7" />
+    
+    <!-- Secondary Protection Shield / Water Ripple Arc -->
+    <path d="M 22,70 A 48,48 0 0,0 118,70" fill="none" stroke="url(#gradient-primary)" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+
+    <!-- Hummingbird Body (Forest Green Gradient) -->
+    <path d="M 45,70 C 45,95 65,105 80,105 C 80,105 68,90 68,70 C 68,50 82,35 82,35 C 65,35 45,45 45,70 Z" fill="url(#gradient-primary)" />
+    
+    <!-- Hummingbird Head (Forest Green Gradient) -->
+    <circle cx="82" cy="35" r="11" fill="url(#gradient-primary)" />
+    
+    <!-- Hummingbird Eye (Clean White) -->
+    <circle cx="85" cy="33" r="2.5" fill="#FFFFFF" />
+    
+    <!-- Hummingbird Beak (Precision Needle - Gold Gradient) -->
+    <path d="M 92,31 L 132,19 C 132,19 108,27 92,35 Z" fill="url(#gradient-secondary)" />
+    
+    <!-- Primary Wing - Dynamic Geometric Arc (Forest Green & Teal) -->
+    <path d="M 52,62 C 45,45 32,20 58,12 C 70,8 75,25 72,42 C 69,59 58,65 52,62 Z" fill="url(#gradient-primary)" opacity="0.9" />
+    
+    <!-- Secondary Wing - Inner Wing (Gold Gradient - represents flight & energy) -->
+    <path d="M 45,70 C 35,58 20,40 38,32 C 48,28 52,42 50,55 C 48,68 46,71 45,70 Z" fill="url(#gradient-secondary)" opacity="0.85" />
+    
+    <!-- Tail Feathers (Gold & Green Arcs) -->
+    <path d="M 80,105 C 82,118 78,135 72,142 C 76,132 82,120 83,105 Z" fill="url(#gradient-secondary)" />
+    <path d="M 75,102 C 73,115 67,128 60,134 C 65,124 72,115 75,102 Z" fill="url(#gradient-primary)" opacity="0.8" />
+  </g>
+
+  <!-- LOGO WORDMARK (BEIJA-FLOR CONTROLE DE PRAGAS) -->
+  <g transform="translate(170, 0)">
+    <!-- "BEIJA-FLOR" - Custom modern sans typography -->
+    <text x="0" y="75" font-family="'Outfit', 'Montserrat', 'Inter', sans-serif" font-size="52px" font-weight="800" letter-spacing="1px" fill="#0A3C36">
+      BEIJA<tspan fill="#D4A373">-</tspan>FLOR
+    </text>
+    
+    <!-- Tagline: "CONTROLE DE PRAGAS" -->
+    <text x="5" y="106" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="15px" font-weight="700" letter-spacing="9.5px" fill="#1E8276">
+      CONTROLE DE PRAGAS
+    </text>
+    
+    <!-- Brand Seal Line -->
+    <line x1="3" y1="120" x2="350" y2="120" stroke="url(#gradient-secondary)" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Local & Date Marker -->
+    <text x="5" y="137" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-size="10px" font-weight="600" letter-spacing="1.5px" fill="#A4BDB9">
+      ILHABELA &bull; EST. 2009 &bull; SANEAMENTO ECOLÓGICO
+    </text>
+  </g>
+</svg>
