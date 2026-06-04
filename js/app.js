@@ -65,6 +65,7 @@ function initializeBrandCenter() {
   let viewedSections = new Set(["strategy"]); // Strategy is viewed by default
   let isSoundEnabled = true;
   let brandData = fallbackBrandData;
+  const totalSections = 7;
 
   // Track session start
   logAction("Sessão Iniciada", "Brand Center carregado.");
@@ -403,7 +404,6 @@ function initializeBrandCenter() {
   });
 
   // 9. PROGRESS BAR & CONGRATS POPUP
-  const totalSections = 7;
   const congratsPopup = document.getElementById("congrats-popup");
   const closeCongratsBtn = document.getElementById("btn-close-congrats");
   const congratsCta = document.getElementById("btn-congrats-cta");
