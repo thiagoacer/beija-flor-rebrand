@@ -54,7 +54,7 @@ const fallbackBrandData = {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+function initializeBrandCenter() {
   // 1. CHANNELS & TELEMETRY CONFIGURATION
   const NTFY_TOPIC = "beijaflor_thiago_pitch";
   const NTFY_URL = `https://ntfy.sh/${NTFY_TOPIC}`;
@@ -551,4 +551,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const secs = seconds % 60;
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   }
-});
+}
+
+// Fail-proof DOM Ready execution
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeBrandCenter);
+} else {
+  initializeBrandCenter();
+}
